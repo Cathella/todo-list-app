@@ -9,15 +9,20 @@
 <body>
   <main>
     <div class="container">
-      <p>Today's Todo</p>
+      <header>
+        <p>Today's Todo</p>
+        <button id="reloadBtn">↻</button>
+      </header>
       <div>
-        <input type="text" placeholder="Add to your list ...">
-
-        <ul id="list" class="todo-list">
-          <li>No tasks have been added yet!</li>
+        <form action="#">
+          <input type="text" placeholder="Add to your list ...">
+          <button id="enterBtn">↲</button>
+        </form>
+        
+        <ul class="todo-list">
         </ul>
 
-        <button>Clear all completed tasks</button>
+        <button id="clearCompleted">Clear all completed tasks</button>
       </div>
     </div>
   </main>

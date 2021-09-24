@@ -28,10 +28,14 @@ main {
   border-radius: 0.25em;
 }
 
+header, form {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
 p {
   padding: 1em;
   width: 100%;
-  border-bottom: 1px solid #ddd;
   font-weight: bold;
 }
 
@@ -40,11 +44,15 @@ input {
   font-style: italic;
   border: none;
   width: 100%;
-  border-bottom: 1px solid #ddd;
+  font-size: 1em;
+  outline: none;
 }
 
 ul {
   list-style: none;
+}
+
+li {
   padding: 1em;
 }
 
@@ -53,5 +61,16 @@ button {
   padding: 1em;
   border: none;
   border-top: 1px solid #ddd;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #777;
+}
+
+#reloadBtn,
+#enterBtn {
+  width: 40px;
+  padding: 0;
+  border: none;
+  background: white;
   font-size: 1em;
 }
