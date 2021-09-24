@@ -6,3 +6,51 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background: rgb(206, 204, 204);
+}
+
+main {
+  position: relative;
+  min-height: 600px;
+}
+
+.container {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 40%;
+  background: white;
+  border-radius: 0.25em;
+}
+
+p {
+  padding: 1em;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+input {
+  padding: 1em;
+  font-style: italic;
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+ul {
+  list-style: none;
+  padding: 1em;
+}
+
+button {
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-top: 1px solid #ddd;
+}
