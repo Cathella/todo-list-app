@@ -1,11 +1,23 @@
 import '../style.css';
 
 // import * as TODO from './app.js';
-import Task from './task.js';
+// import Task from './task.js';
+import todos from './tasks.js';
 
-const task = new Task(0, "Rest in lunch break", true);
-const task2 = new Task(1, "Submit pull request for review", false);
-const task3 = new Task(2, "Join session", false);
+let loadTaskList = () => {
+  todos.forEach((task) => {
+    console.log(task);
+  });
+};
 
+window.onload = () => {
+  const todoList = document.getElementById('todoList');
+  const listItem = document.createElement('li');
+
+  listItem.classList.add('list-item');
+  todoList.appendChild(listItem);
+
+  loadTaskList();
+}
 
 
