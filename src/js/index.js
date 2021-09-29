@@ -15,9 +15,9 @@ window.onload = () => {
   const listItem = document.createElement('li');
 
   listItem.classList.add('list-item');
-  todoList.appendChild(listItem);
+  // todoList.appendChild(listItem);
 
-  loadTaskList();
+  todoList.appendChild(loadTaskList());
 }
 
 
